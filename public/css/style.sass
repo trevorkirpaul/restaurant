@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700')
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700,900')
+//vars
+$red: #EF233C
+$black: #474747
+$white: #FDFEFA
+$grey: #C3C3C2
+$font: 'Roboto', sans-serif
+$serif: 'Vollkorn', serif
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: $white
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-areas: "header header header header" "hero hero hero hero" "Welcome Welcome wPics wPics" "reserve reserve reserve reserve"
+
+  header
+    margin-top: 20px
+    height: 120px
+    grid-area: header
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    font-family: $font
+    // background-color: lightcoral
+
+    ul
+      list-style: none
+      margin-top: 60px
+      font-weight: 300
+      color: $black
+      
+      li
+        padding-bottom: 15px
+        padding-top: 10px
+        border-top: 3px solid $white
+        display: inline-block
+      
+
+
+    .menuLeft
+      text-align: left
+      li
+        padding-right: 25px
+        cursor: pointer
+        &:hover
+          border-top: 3px solid $red 
+      
+    #logo
+      text-align: center
+      img
+        width: 150px
+        display: inline-block
+        margin: 0 auto
+
+    
+    .menuRight
+      text-align: right
+      li
+        padding-left: 25px
+        cursor: pointer
+        &:hover
+          border-top: 3px solid $red
+
+    ul
+      .active
+        border-color: $black
+        cursor: default
+        &:hover
+          border-color: $black
+      
+  // End of Header
+
+  .hero
+    position: relative
+    grid-area: hero
+    background-image: url(../img/hero.jpeg)
+    background-size: cover
+    background-postion: center
+
+    margin-top: 40px
+    height: 600px
+
+    #heroTitle
+      position: absolute
+      font-family: $serif
+      font-size: 3em
+      color: $white
+      background-color: $black
+      padding: 5px 15px
+      right: 25px
+      top: 40px
+      
+        
+
+    p
+      position: absolute
+      right: 75px
+      top: 110px
+
+      font-size: 2em
+      font-family: $font
+      font-weight: 300
+      background-color: $white
+      color: $black
+      padding: 5px 15px
+
+      span
+        color: $red
+        font-weight: 400
+
+  // end hero
+
+  .welcomeSection
+    grid-area: Welcome
+
+    margin-top: 70px
+    margin-bottom: 50px
+
+    h1
+      margin-bottom: 50px
+      font-size: 5em
+      font-family: $serif
+      color: $black
+      font-weight: 300
+    h3
+      margin-left: 10px
+      font-family: $serif
+      font-weight: 300
+      font-size: 2em 
+      a
+        color: $red
+
+    p
+      width: 80%
+      line-height: 35px
+      margin-bottom: 35px
+      color: $black
+      margin-left: 10px
+      span
+        color: $red
+  
+  .welcomePics
+    grid-area: wPics
+    margin-top: 238px
+    text-align: right
+    .imgContainer
+      width: 90%
+      margin: 0 auto
+      margin-bottom: 25px
+
+// end welcome
+
+.welcomeReserve
+  grid-area: reserve
+  height: 220px
+  background-color: $black
+  color: $white
+  font-family: $serif
+  padding: 15px
+  text-align: center
+  margin-top: 50px
+
+  h2
+    margin-top: 15px
+    font-size: 2em
+    font-weight: 300
+    margin-bottom: 50px
+  form
+    
+      
+
+  margin-bottom: 500px

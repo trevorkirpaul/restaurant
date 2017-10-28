@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400,700,900");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #FDFEFA; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "hero hero hero hero" "Welcome Welcome wPics wPics" "reserve reserve reserve reserve"; }
+  .container header {
+    margin-top: 20px;
+    height: 120px;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: "Roboto", sans-serif; }
+    .container header ul {
+      list-style: none;
+      margin-top: 60px;
+      font-weight: 300;
+      color: #474747; }
+      .container header ul li {
+        padding-bottom: 15px;
+        padding-top: 10px;
+        border-top: 3px solid #FDFEFA;
+        display: inline-block; }
+    .container header .menuLeft {
+      text-align: left; }
+      .container header .menuLeft li {
+        padding-right: 25px;
+        cursor: pointer; }
+        .container header .menuLeft li:hover {
+          border-top: 3px solid #EF233C; }
+    .container header #logo {
+      text-align: center; }
+      .container header #logo img {
+        width: 150px;
+        display: inline-block;
+        margin: 0 auto; }
+    .container header .menuRight {
+      text-align: right; }
+      .container header .menuRight li {
+        padding-left: 25px;
+        cursor: pointer; }
+        .container header .menuRight li:hover {
+          border-top: 3px solid #EF233C; }
+    .container header ul .active {
+      border-color: #474747;
+      cursor: default; }
+      .container header ul .active:hover {
+        border-color: #474747; }
+  .container .hero {
+    position: relative;
+    grid-area: hero;
+    background-image: url(../img/hero.jpeg);
+    background-size: cover;
+    background-postion: center;
+    margin-top: 40px;
+    height: 600px; }
+    .container .hero #heroTitle {
+      position: absolute;
+      font-family: "Vollkorn", serif;
+      font-size: 3em;
+      color: #FDFEFA;
+      background-color: #474747;
+      padding: 5px 15px;
+      right: 25px;
+      top: 40px; }
+    .container .hero p {
+      position: absolute;
+      right: 75px;
+      top: 110px;
+      font-size: 2em;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      background-color: #FDFEFA;
+      color: #474747;
+      padding: 5px 15px; }
+      .container .hero p span {
+        color: #EF233C;
+        font-weight: 400; }
+  .container .welcomeSection {
+    grid-area: Welcome;
+    margin-top: 70px;
+    margin-bottom: 50px; }
+    .container .welcomeSection h1 {
+      margin-bottom: 50px;
+      font-size: 5em;
+      font-family: "Vollkorn", serif;
+      color: #474747;
+      font-weight: 300; }
+    .container .welcomeSection h3 {
+      margin-left: 10px;
+      font-family: "Vollkorn", serif;
+      font-weight: 300;
+      font-size: 2em; }
+      .container .welcomeSection h3 a {
+        color: #EF233C; }
+    .container .welcomeSection p {
+      width: 80%;
+      line-height: 35px;
+      margin-bottom: 35px;
+      color: #474747;
+      margin-left: 10px; }
+      .container .welcomeSection p span {
+        color: #EF233C; }
+  .container .welcomePics {
+    grid-area: wPics;
+    margin-top: 238px;
+    text-align: right; }
+    .container .welcomePics .imgContainer {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 25px; }
+
+.welcomeReserve {
+  grid-area: reserve;
+  height: 220px;
+  background-color: #474747;
+  color: #FDFEFA;
+  font-family: "Vollkorn", serif;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 500px; }
+  .welcomeReserve h2 {
+    margin-top: 15px;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 50px; }
+
+/*# sourceMappingURL=style.css.map */

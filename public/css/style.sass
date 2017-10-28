@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700,900')
 //vars
 $red: #EF233C
-$black: #474747
+$black: #141414
 $white: #FDFEFA
 $grey: #C3C3C2
 $font: 'Roboto', sans-serif
@@ -10,6 +10,8 @@ $serif: 'Vollkorn', serif
 *
   margin: 0
   padding: 0
+  outline: none
+  box-sizing: border-box
 
 body
   background-color: $white
@@ -160,7 +162,7 @@ body
 
 .welcomeReserve
   grid-area: reserve
-  height: 220px
+  height: 250px
   background-color: $black
   color: $white
   font-family: $serif
@@ -168,13 +170,78 @@ body
   text-align: center
   margin-top: 50px
 
-  h2
-    margin-top: 15px
-    font-size: 2em
-    font-weight: 300
-    margin-bottom: 50px
-  form
+  h3
+    margin: 15px 0 45px 0
+    font-family: $font
+    color: $white
+    font-size: 1.5em
+    text-transform: uppercase
+
+    
+
+  .reserveGrid
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    margin-bottom: 25px
+
+    text-align: left
+
+    div
+      span
+        display: inline-block
+        margin-bottom: 15px
+        font-family: $font
+      input
+        display: inline-block
+        width: 90%
+        margin: 0 auto
+        height: 30px
+        padding: 2px
+        font-size: 120%
+        border: none
+        border-bottom: 1px solid $white
+        background-color: $black
+        color: $white
+  
+  #btnSub
+    margin: 0 auto
+    width: 150px
+    height: 35px
+    border: 1px solid $white
+    background-color: $black
+    color: $white
+    font-size: 120%
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+      background-color: $white
+      color: $black
+    
     
       
 
-  margin-bottom: 500px
+  margin-bottom: 100px
+
+footer
+  background-color: $red
+  padding: 25px
+  height: 250px
+
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+  .footerLeft
+    font-family: $font
+    color: $black
+    ul
+      list-style: none
+      margin-left: 5px
+      color: $white
+  .footerMiddle
+    text-align: center
+    img
+      display: inline-block
+      width: 300px
+      margin: 0 auto
+
+  

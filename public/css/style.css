@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:400,700,900");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
 
 body {
   background-color: #FDFEFA; }
@@ -24,7 +26,7 @@ body {
       list-style: none;
       margin-top: 60px;
       font-weight: 300;
-      color: #474747; }
+      color: #141414; }
       .container header ul li {
         padding-bottom: 15px;
         padding-top: 10px;
@@ -51,10 +53,10 @@ body {
         .container header .menuRight li:hover {
           border-top: 3px solid #EF233C; }
     .container header ul .active {
-      border-color: #474747;
+      border-color: #141414;
       cursor: default; }
       .container header ul .active:hover {
-        border-color: #474747; }
+        border-color: #141414; }
   .container .hero {
     position: relative;
     grid-area: hero;
@@ -68,7 +70,7 @@ body {
       font-family: "Vollkorn", serif;
       font-size: 3em;
       color: #FDFEFA;
-      background-color: #474747;
+      background-color: #141414;
       padding: 5px 15px;
       right: 25px;
       top: 40px; }
@@ -80,7 +82,7 @@ body {
       font-family: "Roboto", sans-serif;
       font-weight: 300;
       background-color: #FDFEFA;
-      color: #474747;
+      color: #141414;
       padding: 5px 15px; }
       .container .hero p span {
         color: #EF233C;
@@ -93,7 +95,7 @@ body {
       margin-bottom: 50px;
       font-size: 5em;
       font-family: "Vollkorn", serif;
-      color: #474747;
+      color: #141414;
       font-weight: 300; }
     .container .welcomeSection h3 {
       margin-left: 10px;
@@ -106,7 +108,7 @@ body {
       width: 80%;
       line-height: 35px;
       margin-bottom: 35px;
-      color: #474747;
+      color: #141414;
       margin-left: 10px; }
       .container .welcomeSection p span {
         color: #EF233C; }
@@ -121,18 +123,72 @@ body {
 
 .welcomeReserve {
   grid-area: reserve;
-  height: 220px;
-  background-color: #474747;
+  height: 250px;
+  background-color: #141414;
   color: #FDFEFA;
   font-family: "Vollkorn", serif;
   padding: 15px;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 500px; }
-  .welcomeReserve h2 {
-    margin-top: 15px;
-    font-size: 2em;
-    font-weight: 300;
-    margin-bottom: 50px; }
+  margin-bottom: 100px; }
+  .welcomeReserve h3 {
+    margin: 15px 0 45px 0;
+    font-family: "Roboto", sans-serif;
+    color: #FDFEFA;
+    font-size: 1.5em;
+    text-transform: uppercase; }
+  .welcomeReserve .reserveGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 25px;
+    text-align: left; }
+    .welcomeReserve .reserveGrid div span {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-family: "Roboto", sans-serif; }
+    .welcomeReserve .reserveGrid div input {
+      display: inline-block;
+      width: 90%;
+      margin: 0 auto;
+      height: 30px;
+      padding: 2px;
+      font-size: 120%;
+      border: none;
+      border-bottom: 1px solid #FDFEFA;
+      background-color: #141414;
+      color: #FDFEFA; }
+  .welcomeReserve #btnSub {
+    margin: 0 auto;
+    width: 150px;
+    height: 35px;
+    border: 1px solid #FDFEFA;
+    background-color: #141414;
+    color: #FDFEFA;
+    font-size: 120%;
+    cursor: pointer;
+    transition: 0.3s; }
+    .welcomeReserve #btnSub:hover {
+      background-color: #FDFEFA;
+      color: #141414; }
+
+footer {
+  background-color: #EF233C;
+  padding: 25px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  footer .footerLeft {
+    font-family: "Roboto", sans-serif;
+    color: #141414; }
+    footer .footerLeft ul {
+      list-style: none;
+      margin-left: 5px;
+      color: #FDFEFA; }
+  footer .footerMiddle {
+    text-align: center; }
+    footer .footerMiddle img {
+      display: inline-block;
+      width: 300px;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

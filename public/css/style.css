@@ -32,6 +32,9 @@ body {
         padding-top: 10px;
         border-top: 3px solid #FDFEFA;
         display: inline-block; }
+        .container header ul li a {
+          text-decoration: none;
+          color: #141414; }
     .container header .menuLeft {
       text-align: left; }
       .container header .menuLeft li {
@@ -170,6 +173,109 @@ body {
     .welcomeReserve #btnSub:hover {
       background-color: #FDFEFA;
       color: #141414; }
+
+.menuContainer {
+  grid-area: hero;
+  background-color: #C3C3C2;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 35px;
+  margin-bottom: 50px; }
+  .menuContainer .menuContainerTitle {
+    grid-column: 1/3;
+    text-align: center;
+    font-family: "Vollkorn", serif;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .menuContainer .menuContainerTitle h1 {
+      font-weight: 300;
+      font-size: 4em;
+      color: #141414;
+      padding: 0px;
+      display: inline-block;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase; }
+  .menuContainer .left {
+    grid-column: 1/2;
+    text-align: center; }
+  .menuContainer .right {
+    grid-column: 2/3;
+    text-align: center; }
+  .menuContainer .menuSection {
+    font-family: "Vollkorn", serif;
+    color: #141414;
+    margin-bottom: 75px; }
+    .menuContainer .menuSection h2 {
+      font-weight: 300;
+      margin-bottom: 35px;
+      display: inline-block;
+      background-color: #EF233C;
+      padding: 5px 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900; }
+    .menuContainer .menuSection .foodItem {
+      margin-bottom: 55px; }
+      .menuContainer .menuSection .foodItem .foodTitle {
+        margin-bottom: 5px; }
+      .menuContainer .menuSection .foodItem .foodDescription {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        max-width: 200px;
+        line-height: 35px; }
+
+.contactForm input {
+  display: block;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid #141414; }
+.contactForm textarea {
+  display: block;
+  width: 400px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  resize: none;
+  margin-bottom: 15px;
+  border: 1px solid #141414; }
+.contactForm button {
+  border: 1px solid #141414;
+  background-color: #FDFEFA;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s; }
+  .contactForm button:hover {
+    background-color: #EF233C;
+    border-color: #EF233C; }
+
+#btnSubmitAnotherContact {
+  border: 1px solid #141414;
+  background-color: #FDFEFA;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none; }
+  #btnSubmitAnotherContact:hover {
+    background-color: #EF233C;
+    border-color: #EF233C; }
+
+.contactAsideContainer {
+  grid-area: wPics;
+  margin-top: 170px;
+  margin-bottom: 250px;
+  background-color: #FDFEFA;
+  padding: 15px; }
+
+#contactAside {
+  text-align: left;
+  width: 300px; }
+  #contactAside h2 {
+    font-family: "Vollkorn", serif;
+    margin-bottom: 25px; }
+  #contactAside p {
+    line-height: 35px; }
 
 footer {
   background-color: #EF233C;

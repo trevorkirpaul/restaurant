@@ -38,8 +38,7 @@ body {
     .container header .menuLeft {
       text-align: left; }
       .container header .menuLeft li {
-        padding-right: 25px;
-        cursor: pointer; }
+        padding-right: 25px; }
         .container header .menuLeft li:hover {
           border-top: 3px solid #EF233C; }
     .container header #logo {
@@ -176,7 +175,7 @@ body {
 
 .menuContainer {
   grid-area: hero;
-  background-color: #C3C3C2;
+  background-color: #E3E3E3;
   margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -281,20 +280,87 @@ footer {
   background-color: #EF233C;
   padding: 25px;
   height: 250px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  display: flex;
+  flex-direction: row; }
   footer .footerLeft {
+    flex: 1;
     font-family: "Roboto", sans-serif;
     color: #141414; }
+    footer .footerLeft span {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: 600; }
     footer .footerLeft ul {
       list-style: none;
       margin-left: 5px;
       color: #FDFEFA; }
+      footer .footerLeft ul li {
+        padding: 5px; }
+        footer .footerLeft ul li a {
+          color: #FDFEFA;
+          text-decoration: none; }
   footer .footerMiddle {
+    flex: 1;
     text-align: center; }
     footer .footerMiddle img {
       display: inline-block;
-      width: 300px;
-      margin: 0 auto; }
+      width: 100px;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+    footer .footerMiddle h3 {
+      color: #141414;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+  footer .footerSocial {
+    flex: 1;
+    text-align: center; }
+    footer .footerSocial ul {
+      list-style: none; }
+      footer .footerSocial ul li {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer; }
+        footer .footerSocial ul li:hover {
+          color: #FDFEFA; }
+
+.eventsHero {
+  background-image: url(../img/eventshero.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-area: hero;
+  height: 400px;
+  text-align: center;
+  margin-bottom: 50px; }
+  .eventsHero .eventsHeroText {
+    margin-top: 150px;
+    font-family: "Roboto", sans-serif; }
+    .eventsHero .eventsHeroText h1 {
+      font-size: 4em;
+      display: inline-block;
+      background-color: #141414;
+      color: #FDFEFA;
+      padding: 5px 15px;
+      margin-bottom: 10px; }
+    .eventsHero .eventsHeroText h3 {
+      font-size: 2em;
+      display: inline-block;
+      background-color: #EF233C;
+      padding: 5px 15px;
+      font-weight: 300; }
+
+.eventsBody {
+  grid-area: Welcome;
+  font-family: "Roboto", sans-serif;
+  padding: 15px; }
+  .eventsBody h2 {
+    font-size: 2em;
+    margin-bottom: 25px; }
+  .eventsBody h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .eventsBody p {
+    margin-bottom: 55px;
+    line-height: 35px; }
 
 /*# sourceMappingURL=style.css.map */

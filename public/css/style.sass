@@ -4,7 +4,7 @@
 $red: #EF233C
 $black: #141414
 $white: #FDFEFA
-$grey: #C3C3C2
+$grey: #E3E3E3
 $font: 'Roboto', sans-serif
 $serif: 'Vollkorn', serif
 *
@@ -55,7 +55,7 @@ body
       text-align: left
       li
         padding-right: 25px
-        cursor: pointer
+        
         &:hover
           border-top: 3px solid $red 
       
@@ -363,22 +363,94 @@ footer
   background-color: $red
   padding: 25px
   height: 250px
-
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  display: flex
+  flex-direction: row
+  
 
   .footerLeft
+    flex: 1
     font-family: $font
     color: $black
+    span
+      display: inline-block
+      margin-bottom: 10px
+      font-weight: 600
     ul
       list-style: none
       margin-left: 5px
       color: $white
+      li
+        padding: 5px
+        a
+          color: $white
+          text-decoration: none
   .footerMiddle
+    flex: 1
     text-align: center
     img
       display: inline-block
-      width: 300px
+      width: 100px
       margin: 0 auto
+      margin-bottom: 15px
+    h3
+      color: $black
+      font-family: $font
+      font-weight: 300
+
+  .footerSocial
+    flex: 1
+    text-align: center
+    ul
+      list-style: none
+      li
+        display: inline-block
+        padding: 10px
+        cursor: pointer
+        &:hover
+          color: $white
+
+  //EVENTS PAGE
+
+.eventsHero
+  background-image: url(../img/eventshero.jpeg)
+  background-size: cover
+  background-position: center
+  grid-area: hero     
+  height: 400px
+  text-align: center
+  margin-bottom: 50px
+  .eventsHeroText
+    margin-top: 150px
+    font-family: $font
+    h1
+      font-size: 4em
+      display: inline-block
+      background-color: $black
+      color: $white
+      padding: 5px 15px
+      margin-bottom: 10px
+    h3
+      font-size: 2em
+      display: inline-block
+      background-color: $red 
+      padding: 5px 15px
+      font-weight: 300
+.eventsBody
+  grid-area: Welcome
+  font-family: $font
+  padding: 15px
+  h2
+    font-size: 2em
+    margin-bottom: 25px
+  h3
+    font-size: 1.5em
+    font-weight: 300
+    margin-bottom: 15px
+
+  p
+    margin-bottom: 55px
+    line-height: 35px
+    
+        
 
   
